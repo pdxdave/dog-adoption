@@ -1,22 +1,38 @@
 import React from "react"
-import { Link } from "gatsby"
+import {graphql} from 'gatsby'
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import HeaderBridge from '../components/header-bridge'
 
-const IndexPage = () => (
+import Hero from '../components/hero'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+  
+    <Hero 
+        img={data.img.childImageSharp.fluid}
+        styleClass="default-hero"
+        title1="willow creek"
+        title2="dog rescue &"
+        title3="adoption"
+    />
+    <HeaderBridge />
   </Layout>
 )
 
+export const query = graphql`
+{
+  img: file(relativePath: {eq: "germ3.jpg"}) {
+    childImageSharp {
+      fluid(maxWidth: 2560, quality: 100) {
+       ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}
+`
 export default IndexPage
