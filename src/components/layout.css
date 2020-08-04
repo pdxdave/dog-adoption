@@ -77,3 +77,13 @@ p {
     margin: 16px 0px;
   }
 }
+
+/************
+  About
+*************/
+
+@media (max-width: 767px){
+  .about_card {
+    margin: 16px 0px;
+  }
+}
