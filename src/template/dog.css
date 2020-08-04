@@ -1,0 +1,17 @@
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 120px auto 0px;
+    max-width: 700px;
+}
+
+.image-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
