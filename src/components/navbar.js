@@ -20,11 +20,11 @@ const CustomNavbar = () => {
                     <Link to="/about">
                         <Nav.Link as="a">About</Nav.Link>
                     </Link>
+                    <Link to="/available">
+                        <Nav.Link as="a" >Available Dogs</Nav.Link>
+                    </Link>
                     <Link to="/contact">
                         <Nav.Link as="a" >Contact</Nav.Link>
-                    </Link>
-                    <Link to="/products">
-                        <Nav.Link as="a" >Products</Nav.Link>
                     </Link>
                 </Nav>
             </Navbar.Collapse>

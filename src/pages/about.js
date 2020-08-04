@@ -22,7 +22,7 @@ const About = ({data}) => {
                 <Title title="about us"/>
                     <Row>
                         <Col className="text-muted">
-                            Willow Creek was founded by three members.  Each member brings a set of skills and experience that make 
+                            Willow Creek was founded by three dog enthusiasts.  Each brings a set of skills and experience that make 
                             Willow Creak unique.  For instance, Tom Baker, has trained dogs for over 20 years. You may have seen his 
                             videos on YouTube.  Karen Staucey, has worked with numerous dog adoption agencies across the US and is well 
                             versed on facilitating the transportation of rescue dogs.  And finally, Beth McFee, has a wealth of business 
@@ -36,18 +36,18 @@ const About = ({data}) => {
                             <Card.Img variant="top" src={Tom} />
                                 <Card.Body>
                                     <Card.Title>Tom Baker</Card.Title>
-                                    <Card.Text>
+                                    <Card.Text className="text-muted">
                                     Hi! I look forward to meeting and working with you to help you become a confident, competent dog owner. 
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
                         </Col>
                         <Col sm={10} md={4}>
-                        <Card >
+                        <Card className="about_card">
                             <Card.Img variant="top" src={Beth} />
                                 <Card.Body>
                                     <Card.Title>Beth McFee</Card.Title>
-                                    <Card.Text>
+                                    <Card.Text className="text-muted">
                                     Hello, I am beth. I really enjoy leading the business side of things at Willow Creek.  Each year we are expanding operations, and that leads to more rescued 
                                     dogs and happy dog owners.
                                     </Card.Text>
@@ -59,7 +59,7 @@ const About = ({data}) => {
                             <Card.Img variant="top" src={Karen} />
                                 <Card.Body>
                                     <Card.Title>Karen Staucey</Card.Title>
-                                    <Card.Text>
+                                    <Card.Text className="text-muted">
                                     Hello!  I use my years of experience working with dog shelters across
                                     the US to bring them to you.  Let me know what you're looking. 
                                     </Card.Text>
