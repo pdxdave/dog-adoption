@@ -23,9 +23,9 @@ const About = ({data}) => {
                     <Row>
                         <Col className="text-muted">
                             Willow Creek was founded by three dog enthusiasts.  Each brings a set of skills and experience that make 
-                            Willow Creak unique.  For instance, Tom Baker, has trained dogs for over 20 years. You may have seen his 
-                            videos on YouTube.  Karen Staucey, has worked with numerous dog adoption agencies across the US and is well 
-                            versed on facilitating the transportation of rescue dogs.  And finally, Beth McFee, has a wealth of business 
+                            Willow Creak unique.  For instance, Tom Baker has trained dogs for over 20 years. You may have seen his 
+                            videos on YouTube.  Karen Staucey has worked with numerous dog adoption agencies across the US and is well 
+                            versed on facilitating the transportation of rescue dogs.  And finally, Beth McFee has a wealth of business 
                             operations experience and knows how to keep things running. Together, along with many great volunteers, they 
                             make up Willow Creek.
                         </Col>

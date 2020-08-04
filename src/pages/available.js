@@ -1,11 +1,15 @@
 import React from 'react'
-import {graphql} from 'gatsby'
+import {graphql, Link} from 'gatsby'
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import Title from '../components/title'
-import {Container, Row, Col} from 'react-bootstrap'
+import {Container, Row, Col, Card, Button} from 'react-bootstrap'
+import Image from 'gatsby-image'
+
 
 const Available = ({data}) => {
+
+    const {allContentfulDogProfile:{nodes:dogs}} = data
     return (
         <Layout>
             <Hero 
@@ -14,10 +18,22 @@ const Available = ({data}) => {
             />
             <Container>
                 <Title title="available dogs"/>
-                <Row>
-                    <Col>
-                    
-                    </Col>
+                <Row className="py-5">
+                    {dogs.map((dog) => {
+                        return (
+                            <Col key={dog.id} sm={10} md={4} className="available-card">
+                                <Card >
+                                    <Image fluid={dog.image.fluid}  alt={dog.name} style={{height: "15rem"}}/>
+                                    <Card.Body>
+                                        <Card.Title className="text-center">{dog.name}</Card.Title>
+                                    </Card.Body>
+                                    <Link to={`/dogs/${dog.slug}`} style={{textDecoration: 'none'}}>
+                                        <Button block variant="outline-primary">More about {dog.name}</Button>
+                                    </Link>
+                                </Card>
+                            </Col>
+                        )
+                    })}
                 </Row>
             </Container>
             
@@ -33,6 +49,18 @@ export const query = graphql`
         ...GatsbyImageSharpFluid
         }
         }
+    }
+    allContentfulDogProfile {
+    nodes {
+            id
+            name
+            slug
+            image {
+            fluid {
+                ...GatsbyContentfulFluid
+            }
+        }
+    }
     }
 }
 `

@@ -87,3 +87,10 @@ p {
     margin: 16px 0px;
   }
 }
+
+
+@media (max-width: 767px) {
+  .available-card {
+    margin-bottom: 20px;
+  }
+}
