@@ -15,6 +15,7 @@ const ComponentName = ({
                     gender,
                     size,
                     age,
+                    fee,
                     image: {fixed},
                     description: {description}
                 },
@@ -36,6 +37,7 @@ const ComponentName = ({
                     <p>Breed: {breed}</p>
                     <p>Gender: {gender}</p>
                     <p>Size: {size}</p>
+                    <p>Adoption fee: ${fee}</p>
                     <p>{description}</p>
                     <Link to="/available" style={{textDecoration: 'none'}}>
                         <Button variant="outline-primary">Return</Button>
