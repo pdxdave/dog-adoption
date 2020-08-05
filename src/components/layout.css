@@ -97,3 +97,25 @@ p {
   }
 }
 
+
+/************
+  Willow Creek
+*************/
+
+.willow-image {
+  max-width: 100%;
+}
+
+@media (max-width: 767px){
+  .willow-text {
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 768px){
+  .willow-image {
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+  }
+}
+
+

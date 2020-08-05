@@ -3,6 +3,7 @@ import React from "react"
 import "./layout.css"
 import Navbar from '../components/navbar'
 
+
 const Layout = ({ children }) => {
  
 
@@ -10,6 +11,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar />
         <main>{children}</main>
+
     </>
   )
 }

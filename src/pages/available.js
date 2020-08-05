@@ -5,6 +5,7 @@ import Hero from '../components/hero'
 import Title from '../components/title'
 import {Container, Row, Col, Card, Button} from 'react-bootstrap'
 import Image from 'gatsby-image'
+import Footer from '../components/footer'
 
 
 const Available = ({data}) => {
@@ -36,7 +37,7 @@ const Available = ({data}) => {
                     })}
                 </Row>
             </Container>
-            
+            <Footer />
         </Layout>
     )
 }
@@ -45,8 +46,8 @@ export const query = graphql`
 {
     img: file(relativePath: {eq: "germ1.jpg"}) {
         childImageSharp {
-        fluid(maxWidth: 2560, quality: 100) {
-        ...GatsbyImageSharpFluid
+        fluid(maxWidth: 2560, quality: 80) {
+            ...GatsbyImageSharpFluid
         }
         }
     }

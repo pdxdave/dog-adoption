@@ -5,8 +5,6 @@ import Image from 'gatsby-image'
 import {Button} from 'react-bootstrap'
 import './dog.css'
 
-
-
 const ComponentName = ({ 
         data: {
             dog: {
@@ -23,8 +21,9 @@ const ComponentName = ({
         }) => {
 
     return (
+        <Layout>
         <div >
-        <Layout />
+        
             <div >
             <div className="flex" >
                 <div className="image-wrapper">
@@ -44,9 +43,10 @@ const ComponentName = ({
                     </Link>
                 </div>
             </div>{/* end of flex*/}
-            
             </div>{/* end of wrapper*/}
+            
         </div>
+        </Layout>
     )
 }
 
