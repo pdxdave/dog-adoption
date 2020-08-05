@@ -6,6 +6,8 @@ import Title from '../components/title'
 import Footer from '../components/footer'
 
 const Contact = ({data}) => {
+
+
     return (
         <Layout>
             <Hero 
@@ -17,10 +19,7 @@ const Contact = ({data}) => {
                 <Form action="https://formspree.io/spinout11@hotmail.com" method="post">
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
-                        <Form.Text className="text-muted">
-                        We'll never share your email with anyone else.
-                        </Form.Text>
+                        <Form.Control type="email" placeholder="Enter email"/>
                     </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
