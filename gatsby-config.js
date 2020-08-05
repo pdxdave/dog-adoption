@@ -4,7 +4,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Willow Creek`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Willow Creek is a dog rescue and adoption service located in Maine`,
     author: `@pdxdave`,
   },
   plugins: [
