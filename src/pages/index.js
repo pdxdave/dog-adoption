@@ -4,9 +4,10 @@ import {graphql} from 'gatsby'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeaderBridge from '../components/header-bridge'
+import WillowCreek from '../components/willowcreek'
 
 import Hero from '../components/hero'
-
+import Footer from '../components/footer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const IndexPage = ({data}) => (
@@ -21,6 +22,8 @@ const IndexPage = ({data}) => (
         title3="adoption"
     />
     <HeaderBridge />
+    <WillowCreek />
+    <Footer />
   </Layout>
 )
 

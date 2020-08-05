@@ -9,8 +9,9 @@ const CustomNavbar = () => {
         <Navbar bg="light" expand="lg" fixed="top">
             <Link to="/">
                 <Navbar.Brand as="a">
-                    <span>Willow Creek</span>
+                    <span>Willow</span>
                     <img src={logo} alt="logo" style={{ height: "40px", width: "40px"}}/>
+                    <span>Creek</span>
                 </Navbar.Brand>
             </Link>
             

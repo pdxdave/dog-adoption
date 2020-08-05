@@ -6,6 +6,7 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import {Container, Row, Col, Card} from 'react-bootstrap'
 import Title from '../components/title'
+import Footer from '../components/footer'
 
 import Tom from '../images/tom.jpg'
 import Karen from '../images/karen.jpg'
@@ -69,7 +70,7 @@ const About = ({data}) => {
 
                     </Row>
             </Container>
-
+            <Footer />
         </Layout>
     )
 }
