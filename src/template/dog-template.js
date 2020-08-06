@@ -5,6 +5,8 @@ import Image from 'gatsby-image'
 import {Button} from 'react-bootstrap'
 import './dog.css'
 
+import logo from '../images/logo.svg'
+
 const ComponentName = ({ 
         data: {
             dog: {
@@ -21,7 +23,7 @@ const ComponentName = ({
         }) => {
 
     return (
-        <Layout>
+        <Layout >
         <div >
         
             <div >
@@ -39,12 +41,15 @@ const ComponentName = ({
                     <p>Adoption fee: ${fee}</p>
                     <p>{description}</p>
                     <Link to="/available" style={{textDecoration: 'none'}}>
-                        <Button variant="outline-primary">Return</Button>
+                        <Button variant="outline-primary" style={{marginBottom: "30px"}}>Return</Button>
                     </Link>
                 </div>
             </div>{/* end of flex*/}
             </div>{/* end of wrapper*/}
-            
+            <footer className="py-4" style={{textAlign: "center", borderTop: "1px solid gray", backgroundColor: "#f2f2f2"}}>
+                <span>Willow</span><img src={logo} alt="logo" style={{height: "100px", width: "100px"}}/><span>Creek</span>
+                <p>2436 Westbrook Drive, Monhagen, ME | Ph: 207-669-0325 | &copy; 2020</p>
+            </footer>
         </div>
         </Layout>
     )
