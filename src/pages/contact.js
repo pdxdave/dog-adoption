@@ -19,17 +19,17 @@ const Contact = ({data}) => {
                 <Form action="https://formspree.io/spinout11@hotmail.com" method="post">
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email"/>
+                        <Form.Control type="email" placeholder="Enter email" required/>
                     </Form.Group>
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Label>Name</Form.Label>
-                    <Form.Control type="text" placeholder="Name" />
+                    <Form.Control type="text" placeholder="Name" required />
                 </Form.Group>
 
                 <Form.Group controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Message</Form.Label>
-                    <Form.Control as="textarea" rows="3" placeholder="Message"/>
+                    <Form.Control as="textarea" rows="3" placeholder="Message" required/>
                 </Form.Group>
 
                 <Button variant="primary" type="submit">
